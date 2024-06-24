@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
+  <title>EML</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Merriweather:ital,wght@1,300&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+  <!-- Important Owl stylesheet -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- AddEvent script -->
+  <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  <!--firebase sdk links--->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+  
+  <!--end--->
+
+</head>
+
+<body>
+  <!--=================================================================================navbar===================================================================================================================-->
+  <section id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light  fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="images/Add a heading.png" height="50px" width="auto"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutus">About</a>
+          </li>
+          
+        
+          <!--<li class="nav-item"> --
+            <a class="nav-link" href="team.html">Team</a>
+          </li> -----old code-->
+          
+          <li class="nav-item">
+                <!-- <a class="nav-link" href="team.html">Team</a> -->
+                <a class="nav-link dropdown-toggle" href="team_2022_23.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Team
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="nav-link" href="team_2022_23.html">Team 2022-2023</a>
+                  <a class="nav-link" href="team_2021_22.html">Team 2021-2022</a>
+                  <a class="nav-link" href="team.html">Team 2020-2021</a>
+                </div>
+            </li>
+          
+          
+          
+          
+          
+          
+       
+          <li class="nav-item">
+            <a class="nav-link" href="speakers.html">Speakers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#UpcomingTalks">UpcomingTalks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactus">Contact US</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+  <!--=========================================caursel==============================================================-->
+
+  <div class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/coursel1.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/LieutenantGeneral(Dr)Madhuri Kanitkar.jpg" class="d-block w-100" alt="">
+        </div>
+        <div class="carousel-item">
+          <img src="images/coursel2.jpg" class="d-block w-100" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!--=============================================================about--------------=============================--==---=-=-=-----=-=-=-=-=-=-=-=-=-==-=-=--->
+  <section id="aboutus">
+    <header class="page-header gradient1">
+      <div class="container pt-3">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-4 col-sm-4 align-centre showaboutus">
+            <h4>About us</h4>
+            <hr>
+            <img src="images/circle-cropped.png" height="300px" width="auto" alt="Header image" style="padding-bottom: 10px;"/>
+
+          </div>
+
+          <hr>
+          <div class="col-md-8 col-sm-8 showaboutus1">
+
+            <h2>"We, the Extra Mural Lectures team at IIT Hyderabad,</h2>
+            <p>
+              work in bringing decorated personalities from eclectic domains on one platform to talk about various
+              subjects like art, social work, economics, psychology, sports, science etc and inspire our IIT Hyderabad
+              fraternity with insights that they could induce in their lives."
+            </p>
+            <br>
+            <hr>
+            <h4 class="showaboutus2">LEARN BEYOND THE FOUR WALLS OF CLASSROOM</h4>
+          </div>
+
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+        <path fill="#fff" fill-opacity="1"
+          d="M0,128L48,117.3C96,107,192,85,288,80C384,75,480,85,576,112C672,139,768,181,864,181.3C960,181,1056,139,1152,122.7C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+      </svg>
+    </header>
+  </section>
+  <!--===================================================================youtubecards================================================-->
+
+
+
+  <div class="container  showowl" style="padding-bottom: 10px;">
+    <div class="row">
+      <div class="ythead">
+        Past EML talks
+        <br>
+      </div>
+      <br>
+      <div class="owl-carousel">
+        <div class="card col-md-12">
+
+          <iframe height="300" src="https://www.youtube.com/embed/Vp532r_GTVw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Prof. Pulickel Ajayan</h6>
+
+          </div>
+        </div>
+        <div class="card col-md-12">
+
+          <iframe height="300" src="https://www.youtube.com/embed/2sTSrAlbAEc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Dr. Undurti Das</h6>
+
+          </div>
+        </div>
+
+        <div class="card col-md-12">
+
+          <iframe height="300" src="https://www.youtube.com/embed/HlXMhao4VZU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Dr. Rohini Godbole</h6>
+
+          </div>
+        </div>
+        <div class="card col-md-12">
+
+          <iframe height="300" src="https://www.youtube.com/embed/780B9wqLAT0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Dr. Padmanabhan Balaram</h6>
+
+          </div>
+        </div>
+
+        <div class="card col-md-12">
+
+          <iframe height="300" src="https://www.youtube.com/embed/wonCM08YG7Y" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Dr. Y S Rajan</h6>
+
+          </div>
+        </div>
+        <div class="card col-md-12">
+
+          <iframe height="300" src="https://www.youtube.com/embed/Cd-_bQwy38I" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Dr.Tejaswini Manogna</h6>
+
+          </div>
+        </div>
+        <div class="card col-md-12">
+
+          <iframe height="300" src="https://www.youtube.com/embed/S6wf9Z48YEI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Lt Gen (Dr) Madhuri Kanitkar</h6>
+
+          </div>
+        </div>
+        
+        
+        <div class="card col-md-12">
+
+          <iframe height="300" src="https://www.youtube.com/embed/hv9ltQUsA94" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Mr.Tushar gupta IPS</h6>
+
+          </div>
+        </div>
+        <div class="card col-md-12">
+
+          <iframe height="300" src="https://www.youtube.com/embed/FBTns-EeUMo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="card-body">
+
+            <h6 class="card-subtitle mb-2 text-muted">Fastest human calculator</h6>
+          </div>
+        </div>
+
+        <div class="card col-md-12">
+
+          <iframe height="300" src="https://www.youtube.com/embed/YWVAgGQP368" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 text-muted">Dr.Gagandeep (virologist)</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+
+
+  <section class="upcomingtakls" id="UpcomingTalks">
+
+    <div class="container">
+      <div class="row">
+        <div class="heading1">
+          <h4>Upcoming EML Talks</h4>
+          <hr>
+        </div>
+        <!-- <div class="card-wrapper col-lg-4 col-md-6 col-xs-12"> -->
+        <div class="card-wrapper col-lg-4 col-md-auto col-xs-12">  
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img class="card-img-top" src="images/comingsoon2.jpeg" alt="Card image cap">
+            </div>
+            <div class="card-body">
+              <!-- <h5 class="card-title">Prof. Pulickel Ajayan</h5>
+              <div class="card-content">
+                <p class="card-text">Get Inspired by Prof. Pulickel Ajayan on his amazing session about "Strive for Excellence"
+                  <br><br>
+                  <a href="https://youtu.be/Vp532r_GTVw"><button type="button" class="btn btn-light">Join Live Stream</button></a>
+                </p>
+                
+                <a href="https://youtu.be/Vp532r_GTVw" class="btn btn-primary">Set reminder</a>
+                <div title="Add to Calendar" class="addeventatc">
+                  Add to Calendar
+                  <span class="start">01/07/2022 05:00 PM</span>
+                  <span class="end"></span>
+                  <span class="timezone">India/kolkota</span>
+                  <span class="title">Talk By Prof. Pulickel Ajayan on "Strive for Excellence"</span>
+                  <span class="description">Please join the event on EML IIT Hyderabad Youtube Live  </span>
+                  <span class="location">Hyderabad</span>
+                </div>
+
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="card-wrapper col-lg-4 col-md-auto col-xs-12">  
+          <div class="card">
+            <div class="card-img-wrapper">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Coming Soon</h5>
+              <div class="card-content">
+                <br>
+                <p class="card-text text-center">Get Inspired by our sessions by watching insightful sessions by esteemed personalities
+                  <br><br>
+               Deep dive into their journey and learn through their lessons<br><br>
+               Stay Tuned on our website for all the latest updates<br><br>
+                Visit our YouTube channel for all Upcoming and Previous Sessions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-wrapper col-lg-4 col-md-auto col-xs-12">  
+          <div class="card">
+            <div class="card-img-wrapper">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title text-center">Follow Us</h5>
+              <div class="card-content">
+                <p class="card-text text-center">
+                  <br>
+                  Like, Share and Subscribe
+                  <br><br>
+                  <a href="https://www.youtube.com/channel/UCVUaV9giaKOLXlf0euvP9Sg"><button type="button" class="btn btn-light">Youtube Channel <i class="fa fa-youtube-play" style='color:red'></i></button></a>
+                  <br><br>
+                  Checkout Out Our Social Media Pages<br><br>
+                  <a href="https://www.instagram.com/emliith/?hl=en"><button type="button" class="btn btn-light">Instagram <i class="fa fa-instagram" style='color:purple'></i></button></a><br><br>
+                  <a href="https://www.facebook.com/emliith/"><button type="button" class="btn btn-light">Facebook <i class="fa fa-facebook-square" style='color:blue'></i></button></a>
+                  <br><br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </section>
+  <br>
+
+  <section id = "contact-form" class="Material-contact-section section-padding section-dark"
+    style="background-color: rgb(238, 238, 238); border-radius: 25px;">
+    <div class="container" style="padding-top: 10px; ">
+      <div class="row">
+        <!-- Section Titile -->
+        <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+          <h1 class="section-title">Love to Hear From You</h1>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Section Titile -->
+        <div class="col-md-6 mt-3 contact-widget-section2 wow animated fadeInLeft" data-wow-delay=".2s">
+          <p>Want to suggest personality for the talk or willing to speak at one of our Extra Mural Lectures, we would
+            love to hear from you. Here is how you can contact us.</p>
+
+          <div class="find-widget">
+
+          </div>
+          <hr>
+          <div class="find-widget" style="padding: 5px;">
+            Address:<i class="fa fa-home" style="font-size:20px;padding-bottom: 5px;">
+              IIT Hyderabad Kandi, Sangareddy Hyderabad, Telangana
+            </i>
+          </div>
+
+          <div class="find-widget" style="padding: 5px;">
+            <i class="fa fa-phone"></i> <a href="tel:9390291412" style=" color: black;">9390291412</a>
+          </div>
+
+          <div class="find-widget" style="padding: 5px;">
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
+            </svg>
+            <a href="mailto:eml@iith.ac.in" style=" color: black;">eml@iith.ac.in</a>
+
+          </div>
+          <div class="find-widget">
+
+          </div>
+        </div>
+            <!-- contact form -->
+        <div  class="col-md-6 wow animated fadeInRight" data-wow-delay=".2s">
+          <form class="shake" target="_blank" action="index.html" role="form" method="post" id="contactForm"
+            name="contact-form" data-toggle="validator">
+            <!-- Name -->
+            <div class="form-group label-floating">
+              <label class="control-label" for="name">Name</label>
+              <input class="form-control" id="name" type="text" name="name" required
+                data-error="Please enter your name">
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- email -->
+            <div class="form-group label-floating">
+              <label class="control-label" for="email">Email</label>
+              <input class="form-control" id="email" type="email" name="email" required
+                data-error="Please enter your Email">
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- Subject -->
+            <div class="form-group label-floating">
+              <label class="control-label">Subject</label>
+              <input class="form-control" id="msg_subject" type="text" name="subject" required
+                data-error="Please enter your message subject">
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- Message -->
+            <div class="form-group label-floating">
+              <label for="message" class="control-label">Message</label>
+              <textarea class="form-control" rows="3" id="message" name="message" required
+                data-error="Write your message"></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+            <!-- Form Submit -->
+            <div class="form-submit mt-5">
+              <button class="btn btn-success"><i class="material-icons mdi mdi-message-outline"></i> Send
+                Message</button>
+              <div id="msgSubmit" class="h3 text-center hidden"></div>
+              <div class="clearfix"></div>
+            </div>
+            <!-- <div id="success_message" class="alert alert-success">
+              <strong>Success!</strong> This alert box could indicate a successful or positive action.
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <section class="footer gradient1" id="contactus">
+
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,128L80,138.7C160,149,320,171,480,160C640,149,800,107,960,101.3C1120,96,1280,128,1360,144L1440,160L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+      </path>
+    </svg>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container">
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <div class="css-3d-text">Follow us
+          </div>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+          
+          <ul class="social-network social-circle">
+            <li><a href="https://www.facebook.com/emliith/" class="icoFacebook" title="Facebook"><i
+                  class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/emliith?s=20" class="icoTwitter" title="Twitter"><i
+                  class="fa fa-twitter"></i></a></li>
+            <li><a href="https://in.linkedin.com/in/extra-mural-lectures-iit-hyderabad-246492194" class="icoLinkedin"
+                title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCVUaV9giaKOLXlf0euvP9Sg" class="icoYoutube" title="youtube"><i
+                  class="fa fa-youtube"></i></a></li>
+                  <li><a href="https://www.instagram.com/emliith/?hl=en" class="icoInstgram" title="instgram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h4 class="text-uppercase font-weight-bold" style = "color: #fff;">ExtraMural Lectures</h4>
+        <!--<hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #2a9df4;">-->
+        <p style="font-size: large; color: #fff;">EML IIT-Hyderabad, 2020</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h4 class="text-uppercase font-weight-bold" style = "color: #fff;">Quick links</h6>
+        <!-- <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #afb2b6;"> -->
+        <p>
+          <a href="index.html" style=" color: #fff;">Home Page</a>
+        </p>
+        <p>
+          <a href="team_2021_22.html" style=" color: #fff;">Team</a>
+        </p>
+        <p>
+          <a href="index.html#aboutus" style=" color: #fff;">About</a>
+        </p>
+        <p>
+          <a href="speakers.html" style=" color: #fff;">Speakers</a>
+        </p>
+        <p>
+          <a href="https://iith.ac.in/" style=" color: #fff;">IITH Website</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h4 class="text-uppercase font-weight-bold" style = "color: #fff;">Contact</h6>
+        <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 80px; background-color: #fff;">
+        <p>
+          <i class="fa fa-home" style="font-size:24px;padding-bottom: 5px; color: #fff;"> IIT Hyderabad Kandi, Sangareddy Hyderabad, Telangana</i></p>
+        <p>
+          <i class="fa fa-envelope" style="font-size:24px; color: #fff;"></i>
+          <a href="mailto: eml@iith.ac.in" style=" color: #fff;">eml@iith.ac.in</a>
+        </p>
+        <p>
+          <i class="fa fa-phone" style="font-size:24px; color: #fff;"></i><a href="tel: +91 9390291412" style=" color: #fff;">+91 9390291412</a></p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!---New footer addition by Tanmay-->
+    </div>
+
+
+
+    <!-- Copyright -->
+    <ul class="copyright" style="text-align: center; color: #fff; display: inline;">
+      <hr style="color: #fff;">
+      <li> © EML IIT Hyderabad. All rights reserved.</li>
+      <li>website developer<a href="https://github.com/Ajjukota/" style="color: #fff;"> Ajju kota</a></li>
+
+    </ul>
+    <!-- Copyright -->
+
+  </section>
+  
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCG5IaTAJlM8Q2dZJf3ILuDeA87aSBHXkM",
+      authDomain: "eml-form.firebaseapp.com",
+      projectId: "eml-form",
+      storageBucket: "eml-form.appspot.com",
+      messagingSenderId: "467951057699",
+      appId: "1:467951057699:web:4a28416477af1ac5122a96"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    db.settings({ timestampsInSnapshot: true });
+
+  </script>
+  <script src="js/firebase.js"> </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+
+      $('.owl-carousel').owlCarousel({
+        items: 2,
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]
+        // navText: ['<span class="fas fa-chevron-left fa-2x"></span>', '<span class="fas fa-chevron-right fa-2x"></span>'],
+      })
+
+    });
+  </script>
+  <script>
+    window.alert = function () { };
+    var defaultCSS = document.getElementById('bootstrap-css');
+
+    function changeCSS(css) {
+      if (css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="' + css + '" type="text/css" />');
+      else $('head > link').filter(':first').replaceWith(defaultCSS);
+    }
+    $(document).ready(function () {
+      var iframe_height = parseInt($('html').height());
+      window.parent.postMessage(iframe_height, 'http://bootsnipp.com');
+    });
+
+  </script>
+
+  <script>
+    window.sr = ScrollReveal();
+    sr.reveal('.showaboutus',{
+      duration: 2000,
+      origin: 'top',
+      distance: '50px',
+         
+    });
+    
+    sr.reveal('.showaboutus1',{
+      duration: 2000,
+      origin: 'right',
+      distance: '100px',
+         
+    });
+    sr.reveal('.showaboutus2',{
+      duration: 2000,
+      origin: 'left',
+      distance: '100px',
+         
+    });
+    sr.reveal('.showowl',{
+      duration: 2000,
+      origin: 'bottom',
+      distance: '50px',
+         
+    });
+    sr.reveal('.upcomingtakls',{
+      duration: 2000,
+      origin: 'bottom',
+      distance: '50px',
+         
+    });
+    sr.reveal('#contact-form',{
+      duration: 2000,
+      origin: 'bottom',
+      distance: '70px',
+
+    })
+    
+
+    
+  
+
+  </script>
+</body>
+
+</html>
